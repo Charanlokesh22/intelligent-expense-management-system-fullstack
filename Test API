@@ -1,0 +1,7 @@
+uvicorn main:app --reload
+
+POST to http://127.0.0.1:8000/predict
+{
+  "month": 8,
+  "income": 7500
+}
