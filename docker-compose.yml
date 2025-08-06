@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ai-service
+    networks:
+      - app-network
+
+  ai-service:
+    build:
+      context: ./ai-service
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4200:4200"
+    networks:
+      - app-network
+
+networks:
+  app-network:
