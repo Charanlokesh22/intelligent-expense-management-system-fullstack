@@ -45,6 +45,7 @@ Usage
 
 Security
 
+
 - JWT-based secure authentication for all backend routes.
 - Separate user sessions and access control.
 - Secure inter-service communication across containers.
