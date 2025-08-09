@@ -17,3 +17,5 @@ model = LinearRegression()
 model.fit(X, y)
 
 joblib.dump(model, 'budget_model.pkl')
+
+
