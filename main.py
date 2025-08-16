@@ -16,3 +16,4 @@ def get_budget_suggestion(data: BudgetRequest):
     
     
     
+    
