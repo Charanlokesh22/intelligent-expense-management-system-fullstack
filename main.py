@@ -15,3 +15,4 @@ def get_budget_suggestion(data: BudgetRequest):
     return {"suggested_budget": suggestion}
     
     
+    
