@@ -14,3 +14,4 @@ def get_budget_suggestion(data: BudgetRequest):
     suggestion = predict_expense(data.month, data.income)
     return {"suggested_budget": suggestion}
     
+    
